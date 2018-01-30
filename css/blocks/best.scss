@@ -1,0 +1,43 @@
+.best {
+    background-image: url('../img/bg/best-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__title-best {
+    margin-top: 135px;
+    line-height: 1;
+}
+
+
+
+.best__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best__item {
+    width: 30%;
+}
+
+.best__pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.best__info {
+    text-align: center;
+}
+
+.best__title {
+    font-family: 'Lifehack';
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.best__info {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 14px;
+}

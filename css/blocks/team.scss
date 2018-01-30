@@ -1,0 +1,93 @@
+.team {
+    background-image: url('../img/bg/team_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container__team {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__content {
+    width: 70%;
+}
+
+.section__title-team {
+    margin-bottom: rem(55px);
+    line-height: 1;
+}
+
+.team__acco-trigger {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-family: 'Gagalin';
+    display: flex;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border: rem(9px) solid transparent;
+        border-bottom-width: 0;
+        border-top-color: $yellow;
+        margin-right: 9px;
+    }
+}
+
+.team__acco-title {
+    font-family: 'Ubuntu';
+    font-weight: 900;
+}
+
+.team__acco-desc {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+.team__acco-text {
+    color: white;
+}
+
+.team__acco-content {
+    height: 0;
+    overflow: hidden;
+    margin-left: rem(25px);
+}
+
+.team__acco-item {
+    margin-bottom: rem(35px);
+}
+
+.team__acco-trigger {
+    margin-bottom: rem(16px);
+}
+
+.team__acco-text {
+    margin-left: rem(18px);
+}
+
+.team__acco-item--active {
+    .team__acco-trigger {
+        color: $yellow;
+        &:before {
+            transform: rotate(180deg);
+        }            
+    }
+
+    .team__acco-content {
+        height: auto;
+        display: flex;
+    }
+}
