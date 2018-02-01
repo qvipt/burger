@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    background: url('/img/menu/1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.section__title--menu {
+    color: #fff;
+    margin-right: auto;    
+    margin-top: 109px;
+    margin-left: 37px;
+}
+
+.menu__acco {
+   display: flex; 
+}
+
+.menu__item {
+    // display: flex;
+    width: rem(80px);
+    background: rgba(#4c4e50, .7);
+    position: relative;
+}
+
+.menu__link {
+    position: absolute;
+    display: block;
+    top: 50%; 
+    transform: translateX(-35%) rotate(-90deg);
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    text-decoration: none;
+    color: #fff;  
+    white-space: nowrap; 
+}

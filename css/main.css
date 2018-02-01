@@ -603,3 +603,39 @@ ul {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/img/menu/1.png") center center no-repeat;
+  background-size: cover; }
+
+.section__title--menu {
+  color: #fff;
+  margin-right: auto;
+  margin-top: 109px;
+  margin-left: 37px; }
+
+.menu__acco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  width: 5rem;
+  background: rgba(76, 78, 80, 0.7);
+  position: relative; }
+
+.menu__link {
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateX(-35%) rotate(-90deg);
+  -ms-transform: translateX(-35%) rotate(-90deg);
+  transform: translateX(-35%) rotate(-90deg);
+  font-family: 'Gagalin';
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap; }
