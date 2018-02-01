@@ -608,7 +608,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("./img/menu/1.png") center center no-repeat;
+  background: url("../img/menu/1.png") center center no-repeat;
   background-size: cover; }
 
 .section__title--menu {
