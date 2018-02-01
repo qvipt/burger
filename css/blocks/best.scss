@@ -9,8 +9,6 @@
     line-height: 1;
 }
 
-
-
 .best__list {
     display: flex;
     justify-content: space-between;
@@ -24,6 +22,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 37px;
+}
+
+.best__pic-svg {
+    height: 90px;
+    width: 90px;
 }
 
 .best__info {

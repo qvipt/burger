@@ -258,6 +258,10 @@ ul {
   justify-content: center;
   margin-bottom: 37px; }
 
+.best__pic-svg {
+  height: 90px;
+  width: 90px; }
+
 .best__info {
   text-align: center; }
 

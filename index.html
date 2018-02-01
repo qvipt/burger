@@ -67,10 +67,9 @@
                     <ul class="best__list">
                         <li class="best__item">
                             <div class="best__pic">
-                                <svg>
-                                    <use xlink:xref="./img/svg/sprite.svg#meat"></use>
+                                <svg class="best__pic-svg">
+                                    <use xlink:href="./img/svg/sprite.svg#meat"></use>
                                 </svg>
-                                <!-- img src="./img/svg/meat.svg" alt="" class="best__img"> -->
                             </div>
                             <div class="best__info">
                                 <div class="best__title">100% свежее мясо</div>
@@ -80,7 +79,9 @@
                         </li>
                         <li class="best__item">
                             <div class="best__pic">
-                                <img src="./img/svg/hand.svg" alt="" class="best__img">
+                                <svg class="best__pic-svg">
+                                    <use xlink:href="./img/svg/sprite.svg#hand"></use>
+                                </svg>
                             </div>
                             <div class="best__info">
                                 <div class="best__title">Ручная сборка</div>
@@ -91,7 +92,9 @@
                         </li>
                         <li class="best__item">
                             <div class="best__pic">
-                                <img src="./img/svg/natural.svg" alt="" class="best__img">
+                                <svg class="best__pic-svg">
+                                    <use xlink:href="./img/svg/sprite.svg#natural"></use>
+                                </svg>
                             </div>
                             <div class="best__info">
                                 <div class="best__title">Натуральные ингредиенты</div>
@@ -114,17 +117,20 @@
                     </div>
                     <div class="slide__descr">
                         <div class="slide__title">dark beef burger</div>
-                        <div class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                        <div class="slide__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра
+                            эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического
+                            соуса чураско.</div>
                         <div class="slide__price-order">
-                            <div class="slider__price">500</div><div class="slider__rub">рублей</div>
+                            <div class="slider__price">500</div>
+                            <div class="slider__rub">рублей</div>
                             <a href="" class="slider__order">заказать</a>
                         </div>
                     </div>
                     <div class="slider-right">
-                            <a href="#" class="slider-right__icon">
-                                <img class="slider-right__image" src="./img/svg/arrow-scroll.svg" alt="">
-                            </a>
-                        </div>                    
+                        <a href="#" class="slider-right__icon">
+                            <img class="slider-right__image" src="./img/svg/arrow-scroll.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="section team">
@@ -172,9 +178,17 @@
             <div class="section menu">
                 <h2 class="section__title section__title--menu">меню</h2>
                 <ul class="menu__acco">
-                    <li class="menu__item" style="background-image: url(./img/menu/2.png)"><a href="#" class="menu__link"><span class="menu__title">для мясоедов</span></a></li>
-                    <li class="menu__item" style="background-image: url(./img/menu/3.png)"><a href="#" class="menu__link">вегетарианское</a></li>
-                    <li class="menu__item" style="background-image: url(./img/menu/4.png)"><a href="#" class="menu__link">диетическое</a></li>
+                    <li class="menu__item" style="background-image: url(./img/menu/2.png)">
+                        <a href="#" class="menu__link">
+                            <span class="menu__title">для мясоедов</span>
+                        </a>
+                    </li>
+                    <li class="menu__item" style="background-image: url(./img/menu/3.png)">
+                        <a href="#" class="menu__link">вегетарианское</a>
+                    </li>
+                    <li class="menu__item" style="background-image: url(./img/menu/4.png)">
+                        <a href="#" class="menu__link">диетическое</a>
+                    </li>
                 </ul>
             </div>
             <section class="section review">
