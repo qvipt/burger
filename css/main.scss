@@ -4,6 +4,7 @@
 @import "./_misc/vars.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
+@import "./_misc/media.scss";
 
 // sections
 
@@ -16,4 +17,5 @@
 @import "./blocks/fixed.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/menu.scss";
+@import "./blocks/menu-toggle.scss";
 

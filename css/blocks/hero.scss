@@ -9,12 +9,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__logo {
     margin-right: auto;
 }
+
+.header__menu {
+    justify-content: flex-end;
+}
+
 
 .nav {
     margin-right: rem(15px);
@@ -23,6 +28,10 @@
 .nav__list {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        display: none;
+    }    
 }
 
 .nav__item {
@@ -31,7 +40,7 @@
     &:after {
         content: "";
         @include circle(5px, white);
-        margin: 0 12px;
+        margin: 0 rem(12px);
     }
     &:last-child:after {
         display: none;
@@ -40,32 +49,68 @@
 
 .nav__link {
     color: white;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 400;
     line-height: 1.42;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;;
     vertical-align: middle;
+    white-space: nowrap;
     transition: .5s;
     &:hover {
         text-decoration: underline;
     }
 }
 
+.order-link {
+    display: inline-block;
+    min-width: rem(98px);
+    padding: rem(10px) rem(17px);
+    margin-right: rem(85px  );
+    border-radius: rem(5px);
+    background-color: $orange;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    font-weight: 500;
+    text-decoration: uppercase;
+    transition: .1s;
+    &:hover {
+        background-color: darken($orange, 7%);
+    }
+}
+
 .hero__content {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    align-items: center;
+    flex: 1;
     padding-bottom: 15%;
+    justify-content: center;
+    align-items: center;
+    
+    @include tablets {
+        flex-direction: column;
+    }    
 }
 
 .hero__img, .hero__description  {
-
-   flex-basis: 50%;
+   width: 50%;
    display: flex;
+
+   @include tablets {
+        flex-direction: column;
+        height: 50%;
+        align-items: center;
+    }     
+//   display: flex;
+   
+}
+
+.hero__img-pic {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .hero__description {

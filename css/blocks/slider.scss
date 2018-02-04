@@ -1,5 +1,6 @@
 .slider {
     background: linear-gradient(180deg, #f9b33b, #eb8c38, #f9b33b);
+    position: relative;
 }
 .container__slider {
     flex-direction: row;
@@ -9,9 +10,65 @@
     transform: rotate(90deg)
 }
 
+.consist__block {
+    position: absolute;
+    height: rem(90px);
+    width: rem(90px);
+    top: rem(91px);
+    left: rem(80px);
+    background: #f08c33;
+    border-radius: 5%;
+}
+
+.slider__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font-family: 'Gagalin';
+    font-size: rem(14px);
+    text-decoration: none;
+    color: #fff;     
+}
+
+.consist__block-pic {
+    width: rem(46px);
+    height: rem(41px);
+}
+
+.kkal__block {
+    opacity: .5;    
+}
+
+.kkal__block-pic {
+    position: relative;
+    width: rem(60px);
+    height: rem(60px);
+}
+
+.kkal__block-pic--text {
+    position: absolute;
+    font-size: rem(20px);
+    margin-left: rem(1px);
+}
+
+.consist__block-text {
+    margin-top: rem(7px);;
+}
+
+.kkal__block {
+    position: absolute;
+    height: rem(90px);
+    width: rem(90px);
+    bottom: rem(91px);
+    left: rem(80px);
+}
+
 .slide_descr {
     height: 100%;
-    min-width: 450px;
+    min-width: rem(450px);
 }
 
 .slide__title {
@@ -28,7 +85,7 @@
     font-size: rem(14px);
     font-weight: 300;
     color: #fff; 
-    margin-bottom: 37px;
+    margin-bottom: rem(37px);
 }
 
 .slide__price-order {
@@ -38,15 +95,15 @@
 
 .slider__price {
     color: #e35028;
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: 'Gagalin';
 }
 
 .slider__rub {
     color: #e35028;
     font-family: 'Gagalin';
-    font-size: 30px;
-    margin-left: 8px;
+    font-size: rem(30px);
+    margin-left: rem(8px);
 }
 
 .slider__order {
@@ -57,9 +114,9 @@
     color: #fff;
     font-family: 'Ubuntu';
     font-weight: 700;
-    padding: 13px 15px; 
+    padding: rem(13px) rem(15px); 
     border-radius: 5%;
-    margin-left: 28px;
+    margin-left: rem(28px);
 }
 
 .slider-right {

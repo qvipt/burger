@@ -12,7 +12,7 @@
 }
 
 .form__right {
-    margin-left: 20px;
+    margin-left: rem(20px);
 }
 
 
@@ -34,14 +34,14 @@
 .form__block-flex {
     display: flex;
     align-items: center;
-    margin-right: 20px;    
+    margin-right: rem(20px);    
 }
 
 .form__title {
     color: #fff;
     font-size: rem(13px);
     font-weight: 700;
-    margin-bottom: 3px;
+    margin-bottom: rem(3px);
 }
 
 .form__input {
@@ -52,17 +52,17 @@
 }
 
 .form__textarea {
-    height: 118px;
+    height: rem(118px);
     width: 100%;
-    border-radius: 5px;
+    border-radius: rem(5px);
 }
 
 .form__radio {
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .form__checkbox {
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .form__orderbtn {
@@ -72,11 +72,11 @@
     color: #fff;
     padding: rem(9px) rem(14px);
     background: $orange;
-    border-radius: 5px;
+    border-radius: rem(5px);
 }
 
 .form__clearbtn {
-    margin-left: 18px;
+    margin-left: rem(18px);
     color: #fff;
     text-decoration: none;
 }

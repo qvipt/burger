@@ -5,7 +5,7 @@
 }
 
 .section__title-best {
-    margin-top: 135px;
+    margin-top: rem(135px);
     line-height: 1;
 }
 
@@ -21,12 +21,12 @@
 .best__pic {
     display: flex;
     justify-content: center;
-    margin-bottom: 37px;
+    margin-bottom: rem(37px);
 }
 
 .best__pic-svg {
-    height: 90px;
-    width: 90px;
+    height: rem(90px);
+    width: rem(90px);
 }
 
 .best__info {
@@ -35,12 +35,12 @@
 
 .best__title {
     font-family: 'Lifehack';
-    font-size: 28px;
-    margin-bottom: 22px;
+    font-size: rem(28px);
+    margin-bottom: rem(22px);
 }
 
 .best__info {
     font-family: 'Ubuntu';
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
 }
