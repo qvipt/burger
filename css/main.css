@@ -246,11 +246,12 @@ ul {
       height: 50%;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      width: 100%; } }
 
 .hero__img-pic {
-  max-width: 100%;
-  max-height: 100%; }
+  width: 28.1875rem;
+  height: 26.5rem; }
 
 .hero__description {
   -webkit-box-orient: vertical;
