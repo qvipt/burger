@@ -113,7 +113,8 @@ ul {
   font-family: 'Gagalin';
   font-size: 4.5rem;
   font-weight: 300;
-  margin: 0; }
+  margin: 0;
+  white-space: nowrap; }
   .section__title_color_black {
     color: #2f3234; }
 
@@ -139,6 +140,7 @@ ul {
   margin-right: auto; }
 
 .header__menu {
+  margin-left: 20px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
@@ -212,6 +214,7 @@ ul {
 
 .hero__content {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,25 +236,20 @@ ul {
       flex-direction: column; } }
 
 .hero__img, .hero__description {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 50%; }
   @media screen and (max-width: 768px) {
     .hero__img, .hero__description {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
+      width: 100%;
       height: 50%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 100%; } }
+      text-align: center; } }
+
+.hero__img {
+  min-width: 337px;
+  min-height: 341px; }
 
 .hero__img-pic {
-  width: 28.1875rem;
-  height: 26.5rem; }
+  max-width: 100%;
+  max-height: 100%; }
 
 .hero__description {
   -webkit-box-orient: vertical;
@@ -261,6 +259,13 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .hero__description {
+      max-width: 413px; } }
+
+@media screen and (max-width: 1024px) {
+  .section__title--wedo {
+    font-size: 4.0625rem; } }
 
 .hero__description-text {
   color: white;
@@ -268,6 +273,9 @@ ul {
   font-size: 4.0625rem;
   font-weight: 400;
   line-height: 1; }
+  @media screen and (max-width: 1024px) {
+    .hero__description-text {
+      font-size: 3.4375rem; } }
 
 .best {
   background-image: url("../img/bg/best-bg.png");
@@ -546,6 +554,9 @@ ul {
   position: fixed;
   top: 1.25rem;
   right: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
 
 .fixed-menu__link {
   display: -webkit-box;
@@ -741,13 +752,16 @@ ul {
   color: #fff;
   white-space: nowrap; }
 
-.menu-toggle:before {
+.menu-toggle {
   position: fixed;
-  top: 2.0625rem;
+  top: 1.75rem;
   right: 1.875rem;
   content: "\2261";
   font: 2rem "Arial";
   color: #fff;
   display: none; }
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
