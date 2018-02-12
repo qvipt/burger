@@ -6,6 +6,7 @@
     font: rem(32px) 'Arial';
     color: #fff;
     display: none;
+    cursor: pointer;
 
     @include tablets {
         display: block;

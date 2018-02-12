@@ -125,9 +125,15 @@
 }
 
 .section__title--wedo {
+    white-space: nowrap;
     @include laptops {
         font-size: rem(65px);
     }
+
+    @include phones {
+        font-size: 50px;
+        width: 100%;
+    }    
 }
 
 .hero__description-text {

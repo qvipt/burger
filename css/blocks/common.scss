@@ -17,4 +17,11 @@
             color:#2f3234;
         }
     }
+
+    @include phones {
+        font-size: 50px;
+        white-space: normal;
+        width: 235px;
+    }
+    
 }
