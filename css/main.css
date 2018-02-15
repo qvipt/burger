@@ -81,11 +81,16 @@ ul {
 .wrapper {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   position: relative; }
 
 .maincontent {
   height: 100%;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  position: relative;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .container {
   max-width: 61.25rem;
@@ -673,8 +678,23 @@ ul {
   position: relative;
   height: 80%;
   overflow: hidden; }
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  max-width: 100%; }
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%; }
   @media screen and (max-width: 768px) {
-    .container__center {
+    .slider__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -686,17 +706,6 @@ ul {
       -ms-flex-pack: center;
       justify-content: center; } }
 
-.slider__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 933px; }
-
 .slide__photo-pic {
   max-width: 100%;
   max-height: 100%; }
@@ -707,7 +716,10 @@ ul {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .consist__block {
   position: absolute;
@@ -772,18 +784,26 @@ ul {
   width: 50%; }
   @media screen and (max-width: 768px) {
     .slide__descr, .slide__photo {
-      width: 100%;
-      height: 40%;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
 
-@media screen and (max-width: 768px) {
-  .slide__descr {
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+.slide__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .slide__descr {
+      display: block;
+      text-align: center;
+      width: 100%; } }
 
 .slide__title {
   font-size: 4rem;
@@ -910,7 +930,7 @@ ul {
   display: none; }
 
 .consist__menu-row {
-  height: 70px; }
+  height: 60px; }
 
 .consist__menu-pic {
   padding-left: 20px; }

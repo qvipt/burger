@@ -18,21 +18,30 @@
     height: 80%;
     overflow: hidden;
 
-    @include tablets {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    // @include tablets {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    // }      
+
+
 }
 
 .slider__list {
     display: flex;
-    //position: absolute;    
+    transition: 1s;
+    max-width: 100%;
 }
 
 .slider__item {
     display: flex;
-    width: 933px;
+    min-width: 100%;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }        
 }
 
 .slide__photo-pic {
@@ -43,8 +52,11 @@
 .slide__photo {
     display: flex;
     align-items: center;
+    justify-content: center;    
+    // display: block;
+    // text-align: center;
     @include tablets {
-//        min-width: rem(505px);
+        //max-width: rem(505px);
     }
 }
 
@@ -114,16 +126,20 @@
     width: 50%;
 
     @include tablets {
-        width: 100%;
-        height: 40%;
+        //width: 100%;
+        //height: 40%;
         justify-content: center;
     }
 }
 
 .slide__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include tablets {
+        display: block;
         text-align: center;
-        justify-content: center;
+        width: 100%;
     }
 
 
