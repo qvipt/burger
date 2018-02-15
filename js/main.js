@@ -63,6 +63,8 @@ function setEvents() {
 function setEventsjQuery() {
     const sections = $('.section');
     const display = $('.maincontent');
+    const fixedItems = $('.fixed-menu__link');
+
     let isScroll = false;
 
     const gotoSection = secNumber => {
@@ -80,6 +82,10 @@ function setEventsjQuery() {
             'transform': `translate(0, ${position})`,
             '-webkit-transform': `translate(0, ${position})`
         });
+
+
+        console.log(fixedItems);
+        fixedItems.eq(secNumber).addClass('fixed-menu__link--active').siblings().removeClass('fixed-menu__link--active');
 
         setTimeout(() => {
             isScroll = false;
@@ -121,6 +127,12 @@ function setEventsjQuery() {
     $('[scrollTo]').on('click', e => {
         e.preventDefault;
 
+        if ($(e.currentTarget).hasClass('burger-menu-item')) {
+            $('#burgerMenu').css({
+                'display' : 'none'
+            });
+        }
+        
         const scrollTo = $(e.currentTarget).attr('scrollTo');
         console.log(scrollTo);
         gotoSection(scrollTo);
