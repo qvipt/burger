@@ -630,8 +630,6 @@ ul {
   background: transparent;
   border-radius: 50%;
   position: relative; }
-  .fixed-menu__link:hover {
-    border-color: #fff; }
   .fixed-menu__link:before {
     position: absolute;
     content: "";
@@ -882,7 +880,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   background: url("../img/menu/1.png") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .section__title--menu {
   color: #fff;
@@ -893,12 +892,25 @@ ul {
 .menu__acco {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
 
 .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 5rem;
-  background: rgba(76, 78, 80, 0.7);
   position: relative; }
+  .menu__item--active {
+    max-width: 580px;
+    min-width: 260px; }
+
+.menu__acco--item {
+  background: rgba(76, 78, 80, 0.7);
+  width: 80px; }
 
 .menu__link {
   position: absolute;
@@ -912,6 +924,15 @@ ul {
   text-decoration: none;
   color: #fff;
   white-space: nowrap; }
+
+.menu__acco-content {
+  background: rgba(55, 57, 57, 0.93);
+  height: 100%; }
+
+.menu__acco-text {
+  height: 100%;
+  color: #fff;
+  padding: 60px 30px; }
 
 .menu-toggle {
   position: fixed;

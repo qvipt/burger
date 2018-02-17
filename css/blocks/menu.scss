@@ -2,6 +2,7 @@
     display: flex;
     background: url('../img/menu/1.png') center center no-repeat;
     background-size: cover;
+    position: relative
 }
 
 .section__title--menu {
@@ -12,14 +13,27 @@
 }
 
 .menu__acco {
-   display: flex; 
+   display: flex;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
 }
 
 .menu__item {
-    // display: flex;
+    display: flex;
     width: rem(80px);
-    background: rgba(#4c4e50, .7);
     position: relative;
+
+    &--active {
+        max-width: 580px;
+        min-width: 260px;
+    }
+}
+
+.menu__acco--item {
+    background: rgba(#4c4e50, .7);    
+    width: 80px;
 }
 
 .menu__link {
@@ -32,4 +46,16 @@
     text-decoration: none;
     color: #fff;  
     white-space: nowrap; 
+}
+
+.menu__acco-content {
+    background:rgba(#373939, .93);
+    height: 100%;
+  //  width: 500px;
+}
+
+.menu__acco-text {
+    height: 100%;
+    color: #fff;
+    padding: 60px 30px;
 }

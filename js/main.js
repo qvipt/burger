@@ -1,4 +1,4 @@
-function setEvents() {
+function setEventsSlider() {
     var burger = document.querySelector('#burger');
     if (burger) {
         burger.addEventListener('click', function () {
@@ -60,7 +60,7 @@ function setEvents() {
 
 //  jQuery one page slider
 
-function setEventsjQuery() {
+function setEventsOnePagerjQuery() {
     const sections = $('.section');
     const display = $('.maincontent');
     const fixedItems = $('.fixed-menu__link');
@@ -68,7 +68,7 @@ function setEventsjQuery() {
     let isScroll = false;
 
     const gotoSection = secNumber => {
-        console.log(secNumber);
+       // console.log(secNumber);
 
         const position = `${secNumber * -100}%`;
 
@@ -84,8 +84,8 @@ function setEventsjQuery() {
         });
 
 
-        console.log(fixedItems);
-        fixedItems.eq(secNumber).addClass('fixed-menu__link--active').siblings().removeClass('fixed-menu__link--active');
+        fixedItems.removeClass('fixed-menu__link--active');
+        fixedItems.eq(secNumber).addClass('fixed-menu__link--active');
 
         setTimeout(() => {
             isScroll = false;
@@ -140,5 +140,15 @@ function setEventsjQuery() {
 
 }
 
-setEvents();
-setEventsjQuery();
+function setEventsMenu() {
+    $('.menu__link').on('click', e => {
+        e.preventDefault;
+
+
+        console.log(e.currentTarget);
+    });
+}
+
+setEventsSlider();
+setEventsOnePagerjQuery();
+setEventsMenu();
